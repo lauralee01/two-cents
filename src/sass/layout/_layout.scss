@@ -1,0 +1,72 @@
+.header {
+    &__logo {
+        width: 7rem;
+        padding: 2.5rem 1.6rem;
+    }
+}
+.container {
+    display: grid
+}
+.nav {
+    font-size: 1.2rem;
+    background-color: $color-primary;
+
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+       
+    }
+
+
+    &__item {
+        list-style: none;
+    }
+
+    &__item-wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 0.5rem;
+        list-style-type: none;
+    }
+    &__link {
+        &:link,
+        &:visited {
+            text-decoration: none;
+            color: $color-grey-light;
+            display: block;
+            padding: 2.5rem 1.6rem;
+            transition: all 0.3s;
+            text-align: center;
+            &:hover {
+                background-color: rgba(255,255,255,0.3);
+            }
+        }
+    }
+    &__icon {
+        align-self: center;
+        color: $color-grey-light; 
+        margin: 3.1rem 2rem;
+    }
+
+    &__messages {
+
+        &--icon {
+            align-self: center;
+            color: $color-grey-light;
+            
+        }
+
+        &--image {
+            width: 3.5rem;
+            height: 3.5rem;
+            border-radius: 50%;
+            margin: 1.8rem 2rem;
+            object-fit: cover;
+            object-position: center;
+
+        }
+
+        
+    }
+}

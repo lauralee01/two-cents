@@ -14,11 +14,14 @@ export default class Search extends Component {
     render() {
         return (
             <form>
-                <input
+                <div className="search">
+                    <input
+                    className="search__box"
                     placeholder="Search posts..."
                     ref={input => this.search = input}
                     onChange={this.handleInputChange}
-                />
+                    />
+                </div>
             </form>
         )
     }

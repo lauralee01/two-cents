@@ -9,35 +9,35 @@ import face1 from "../img/face1.jpeg";
 export default class Navbar extends Component {
     render() {
         return (
-            <nav className="Nav">
-                <div className="Nav__container">
+            <nav className="nav">
+                <div className="nav__container">
                     <Header />
-                        <div className="Nav__right">
-                            <ul className="Nav__item-wrapper">
-                                <li className="Nav__item">
-                                    <Link className="Nav__link" to="/">Home</Link>
+                        <div className="nav__right">
+                            <ul className="nav__item-wrapper">
+                                <li className="nav__item">
+                                    <Link className="nav__link" to="/">Home</Link>
                                 </li>
-                                <li className="Nav__item">
-                                    <Link className="Nav__link" to="/">Sessions</Link>
+                                <li className="nav__item">
+                                    <Link className="nav__link" to="/">Sessions</Link>
                                 </li>
-                                <li className="Nav__item">
-                                    <Link className="Nav__link" to="/">Topics</Link>
+                                <li className="nav__item">
+                                    <Link className="nav__link" to="/">Topics</Link>
                                 </li>
                             </ul>
+                        </div>
                     <Search />
-                            <div className="Navbar__messages">
-                                <i className="fas fa-envelope Nav__messages--icon"></i>
+                            <div className="nav__messages">
+                                <i className="fas fa-envelope nav__messages--icon nav__icon" />
                             </div>
-                                <i className="fas fa-bell Nav__messages--icon" />
+                                <i className="fas fa-bell nav__messages--icon" />
                                 <img
                                     src={face1}
                                     alt="Display Pic"
-                                    className="Navbar__messages--image"
+                                    className="nav__messages--image"
                                 />
-                    <Button className="Navbar__post">
+                    <Button className="nav__post">
                         New Post
                     </Button>
-                        </div>
                 </div>
             </nav>
         )

@@ -1,0 +1,21 @@
+.nav {
+    &__post {
+        background-image: linear-gradient(
+            to right bottom,
+            $color-secondary 50%,
+            $color-secondary-dark 100%,
+            transparent
+        );
+        border: none;
+        color: $color-white;
+        width: 10rem;
+        padding:  0.8rem 2rem;
+        border-radius: .3rem;
+        margin: 1.8rem 2rem;
+        text-align: center;
+        display: block;
+        justify-self: center;
+        font-size: 1.1rem;
+        cursor: pointer;
+    }
+}
