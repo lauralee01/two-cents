@@ -4,16 +4,16 @@ import face6 from '../img/face6.jpeg';
 const PostBottomProfile = (props) => (
     <div className="content__bottom">
             <div className="content__bottom--heading">
-                <div className="content__bottom--heading-info">
-                    <img src={face6} alt="Logo" className="content__bottom--heading-image" />
-                    <div className="content__bottom--heading-handle">
+                <div className="content__bottom--heading__info">
+                    <img src={face6} alt="Logo" className="content__bottom--heading__image" />
+                    <div className="content__bottom--heading__handle">
                         <h1>
                             Yele Bademosi <span>E</span>&nbsp; <small>Jan 2, 8:31 PM</small>{" "}
                         </h1>
                         <p>{props.bottomPost}</p>
                     </div>
                 </div>
-                <div className="content__bottom--heading-icon">
+                <div className="content__bottom--heading__icon">
                     <i className="fas fa-ellipsis-h" />
                 </div>
             </div>
@@ -25,7 +25,7 @@ const PostBottomProfile = (props) => (
                 corporis exercitationem sequi corrupti soluta harum aspernatur,
                 distinctio debitis possimus accusamus id eius tempore, beatae
                 asperiores illo. Quisquam, non harum. Porro, eum eaque!...
-                <span class="read-more">Read More</span>  
+                <span className="read-more">Read More</span>  
                 </p>
             </div>
 

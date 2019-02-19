@@ -8,7 +8,7 @@
     display: grid
 }
 .nav {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     background-color: $color-primary;
 
 
@@ -44,6 +44,7 @@
         }
     }
     &__icon {
+        font-size: 1.8rem;
         align-self: center;
         color: $color-grey-light; 
         margin: 3.1rem 2rem;
@@ -52,6 +53,7 @@
     &__messages {
 
         &--icon {
+            font-size: 1.8rem;
             align-self: center;
             color: $color-grey-light;
             
@@ -68,5 +70,30 @@
         }
 
         
+    }
+}
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 3rem 5rem;
+}
+.asideleft,
+.asideright,
+.posts {
+    overflow: hidden;
+}
+.alert {
+    text-align: center;
+    margin: 1.5rem;
+
+    &__header {
+        background-color: $color-tertiary;
+        padding: 0.5rem;
+        width: 10%;
+        border-radius: 0.3rem;
+        margin: 0 auto;
+        font-weight: 500;
+        color: $color-white;
     }
 }

@@ -7,13 +7,13 @@ const AsideRightProfile = (props) => (
     <div>
     <div className="asideright-top__profile">
     <div className="asideright-top__profile--info">
-        <div className="asideright-top__profile--info-container">
+        <div className="asideright-top__profile--info__container">
             <img 
                 src={face2}
                 alt="Avatar"
-                className="asideright-top__profile--info-image"
+                className="asideright-top__profile--info__image"
             />
-            <div className="asideright-top__profile--info-handle">
+            <div className="asideright-top__profile--info__handle">
                 <h1>{props.profileOne}</h1>
                 <p>{props.titleOne}</p>
             </div>
@@ -27,13 +27,13 @@ const AsideRightProfile = (props) => (
 
 <div className="asideright-top__profile">
     <div className="asideright-top__profile--info">
-        <div className="asideright-top__profile--info-container">
+        <div className="asideright-top__profile--info__container">
             <img 
                 src={face3}
                 alt="Avatar"
-                className="asideright-top__profile--info-image"
+                className="asideright-top__profile--info__image"
             />
-            <div className="asideright-top__profile--info-handle">
+            <div className="asideright-top__profile--info__handle">
                 <h1>{props.profileTwo}</h1>
                 <p>{props.titleTwo}</p>
             </div>
@@ -47,13 +47,13 @@ const AsideRightProfile = (props) => (
 
 <div className="asideright-top__profile">
     <div className="asideright-top__profile--info">
-        <div className="asideright-top__profile--info-container">
+        <div className="asideright-top__profile--info__container">
             <img 
                 src={face6}
                 alt="Avatar"
-                className="asideright-top__profile--info-image"
+                className="asideright-top__profile--info__image"
             />
-            <div className="asideright-top__profile--info-handle">
+            <div className="asideright-top__profile--info__handle">
                 <h1>{props.profileThree}</h1>
                 <p>{props.titleThree}</p>
             </div>

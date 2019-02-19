@@ -11,7 +11,7 @@ export default class AsideLeft extends Component {
             insight = "insights",
             insightOne = "Cyrus Majebi",
             insightTwo = "Tobi Igbinedion",
-            session = "session",
+            session = "sessions",
             sessionOne = "Yomi Adedeji",
             sessionTwo = "Don Jazzy";
         return (

@@ -3,8 +3,8 @@ import face4 from "../img/face4.jpeg";
 import face5 from "../img/face5.jpeg";
 
 const AsideLeftInsights = (props) => (
-    <div className="asideleftusers">
-            <div className="asideleftusers__insight">
+    <div>
+            <div className="asideleft__users-insight">
             <h1 className="asideleft__users-insight--sessions">{props.insight}</h1>
             <div className="asideleft__users-insight--icon">
                 <i className="fas fa-redo-alt" />

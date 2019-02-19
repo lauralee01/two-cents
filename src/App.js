@@ -9,7 +9,7 @@ import "./sass/main.scss";
 
 class App extends Component {
   render() {
-    const title = "3 New Posts"
+    const title = "3 New posts"
     return (
       <Router>
         <div className="container">
