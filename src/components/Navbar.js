@@ -4,7 +4,7 @@ import Header from './Header';
 import Search from './Search';
 import Button from './Button';
 
-import face1 from "../img/face1.jpeg";
+import pic1 from "../img/pic1.jpg";
 
 export default class Navbar extends Component {
     render() {
@@ -31,7 +31,7 @@ export default class Navbar extends Component {
                             </div>
                                 <i className="fas fa-bell nav__messages--icon" />
                                 <img
-                                    src={face1}
+                                    src={pic1}
                                     alt="Display Pic"
                                     className="nav__messages--image"
                                 />

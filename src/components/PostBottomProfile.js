@@ -1,11 +1,11 @@
 import React from 'react';
-import face6 from '../img/face6.jpeg';
+import pic6 from '../img/pic6.jpg';
 
 const PostBottomProfile = (props) => (
     <div className="content__bottom">
             <div className="content__bottom--heading">
                 <div className="content__bottom--heading__info">
-                    <img src={face6} alt="Logo" className="content__bottom--heading__image" />
+                    <img src={pic6} alt="Logo" className="content__bottom--heading__image" />
                     <div className="content__bottom--heading__handle">
                         <h1>
                             Yele Bademosi <span>E</span>&nbsp; <small>Jan 2, 8:31 PM</small>{" "}
@@ -29,7 +29,7 @@ const PostBottomProfile = (props) => (
                 </p>
             </div>
 
-            <div className="content__bottom--data-footer">
+            <div className="content__bottom--data__footer">
                 <span>
                     <i className="fas fa-thumbs-up" /> 103
                 </span>

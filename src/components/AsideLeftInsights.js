@@ -1,6 +1,6 @@
 import React from 'react';
-import face4 from "../img/face4.jpeg";
-import face5 from "../img/face5.jpeg";
+import pic4 from "../img/pic4.jpg";
+import pic5 from "../img/pic5.jpg";
 
 const AsideLeftInsights = (props) => (
     <div>
@@ -16,7 +16,7 @@ const AsideLeftInsights = (props) => (
                 <div className="asideleft__users-profile--content">
                     <div className="asideleft__users-profile--data">
                         <img
-                            src={face4}
+                            src={pic4}
                             alt="Pic 4"
                             className="asideleft__users-profile--image"
                         />
@@ -43,7 +43,7 @@ const AsideLeftInsights = (props) => (
                 <div className="asideleft__users-profile--content">
                     <div className="asideleft__users-profile--data">
                         <img
-                            src={face5}
+                            src={pic5}
                             alt="Pic 5"
                             className="asideleft__users-profile--image"
                         />

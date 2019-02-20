@@ -3,7 +3,6 @@ import { BrowserRouter as Router} from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Alert from './components/Alert';
 import Main from './components/Main';
-import Footer from './components/Footer';
 
 import "./sass/main.scss";
 
@@ -16,7 +15,6 @@ class App extends Component {
           <Navbar />
           <Alert title={title}/>
           <Main />
-          <Footer />
         </div>
       </Router>
     );

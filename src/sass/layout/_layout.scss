@@ -11,11 +11,16 @@
     font-size: 1.5rem;
     background-color: $color-primary;
 
+    @include respond(tab-land) { 
+        font-size: 1.2rem;
+        background-color: $color-primary; 
+
+    }   
+
 
     &__container {
         display: flex;
         justify-content: space-between;
-       
     }
 
 
@@ -77,6 +82,14 @@
     justify-content: center;
     align-items: flex-start;
     padding: 3rem 5rem;
+
+    @include respond(phone) {
+        margin: 1rem auto;
+    }
+
+    @include respond(tab-port) {
+        margin: 1rem auto;
+    }
 }
 .asideleft,
 .asideright,
@@ -87,6 +100,10 @@
     text-align: center;
     margin: 1.5rem;
 
+    @include respond(tab-port) {
+        text-align: center;
+        margin: 1rem;
+    }
     &__header {
         background-color: $color-tertiary;
         padding: 0.5rem;
@@ -95,5 +112,14 @@
         margin: 0 auto;
         font-weight: 500;
         color: $color-white;
+
+        @include respond(tab-port) {
+            background-color: $color-tertiary;
+            padding: 0.2rem;
+            width: 7%;
+            border-radius: 0.3rem;
+            font-weight: 200;
+            color: $color-white;
+        }
     }
 }

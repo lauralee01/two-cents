@@ -6,6 +6,24 @@
     box-shadow: $box-shadow;
     border-radius: .3rem;
 
+    @include respond(phone) {
+        display: none;
+    }
+
+    @include respond(tab-port) {
+        display: none;
+    }
+
+    @include respond(tab-land) {
+        width: 100%;
+        height: auto;
+        margin-right: 3rem;
+        background-color: $color-white;
+        box-shadow: $box-shadow;
+        border-radius: .3rem;
+    }
+
+
     &__header {
         padding: 1.5rem 1.8rem;
         background-color: $color-grey-2;
@@ -13,6 +31,15 @@
         color: darken($color-grey-dark, 10);
         font-weight: bold;
         text-transform: uppercase;
+
+        @include respond(tab-land) {
+            padding: 0.7rem 1.4rem;
+            background-color: $color-grey-2;
+            font-size: 1.3rem;
+            color: darken($color-grey-dark, 10);
+            font-weight: bold;
+            text-transform: uppercase;
+        } 
         
     }
 
@@ -22,21 +49,37 @@
         justify-content: space-between;
         align-items: center;
 
+        @include respond(tab-land) {
+            padding: 1.2rem 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        } 
+
         &--heading {
             font-weight: 500;
             color: darken($color-grey-dark, 30);
             text-transform: uppercase;
             font-size: 1.5rem;
-         }
 
-         &--icon {
-             align-self: center;
-             color: $color-tertiary;
-             cursor: pointer;
-             &:hover {
-                 color: darken($color-tertiary, 10);
-             }
-         }
+            @include respond(tab-land) {
+                font-weight: 300;
+                color: darken($color-grey-dark, 30);
+                text-transform: uppercase;
+                font-size: 1.2rem;
+    
+            } 
+
+        }
+
+        &--icon {
+            align-self: center;
+            color: $color-tertiary;
+            cursor: pointer;
+            &:hover {
+                color: darken($color-tertiary, 10);
+            }
+        }
     }
 
     &__users {
@@ -45,9 +88,25 @@
         justify-content: space-between;
         align-items: center;
 
+        @include respond(tab-land) {
+            padding: 1.2rem 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center; 
+
+        } 
+
         &--details {
-           display: flex;
-           align-items: center; 
+            display: flex;
+            align-items: center; 
+
+            @include respond(tab-land) {
+                display: flex;
+                justify-content: space-between;
+                align-items: center; 
+
+            } 
+
         }
 
         &--image {
@@ -57,11 +116,28 @@
             object-fit: cover;
             object-position: center;
             margin-right: 1rem;
+
+            @include respond(tab-land) {
+                width: 1.5rem;
+                height: 1.5rem;
+                border-radius: 50%;
+                object-fit: cover;
+                object-position: center;
+                margin-right: 0.5rem;
+    
+            } 
+
         }
         &--info {
             h3 {
                 font-weight: 300;
                 color: darken($color-grey-dark, 50);
+                
+                @include respond(tab-land) {
+                    font-weight: 200;
+                    color: darken($color-grey-dark, 50); 
+                } 
+
             }
             p {
                 color: lighten($color-grey-dark, 10);
@@ -73,6 +149,15 @@
             color: lighten($color-grey-dark, 10);
             cursor: pointer;
             transition: color 0.2s;
+
+            @include respond(tab-land) {
+                font-size: 0.9rem;
+                color: lighten($color-grey-dark, 10);
+                cursor: pointer;
+                transition: color 0.2s;
+    
+            } 
+            
             &:hover {
                 color: darken($color-grey-dark, 20);
             }
@@ -86,11 +171,31 @@
         align-items: center;
         border-top: 1px solid $color-grey-2;
 
+        @include respond(tab-land) {
+            padding: 1.2rem 1.4rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid $color-grey-2;
+    
+
+        } 
+
         &--sessions {
             font-weight: 400;
             color: darken($color-grey-dark, 30);
             text-transform: uppercase;
             font-size: 1.5rem;
+
+            @include respond(tab-land) {
+                font-weight: 300;
+                color: darken($color-grey-dark, 30);
+                text-transform: uppercase;
+                font-size: 1.2rem;  
+        
+    
+            } 
+
         }
 
         &--icon {
@@ -107,6 +212,13 @@
         padding: 1.5rem 1.8rem;
         border-top: 1px solid $color-grey-2;
 
+        @include respond(tab-land) { 
+            padding: 1.1rem 1.4rem;
+            border-top: 1px solid $color-grey-2;
+
+
+        } 
+
         &--top {
             display: flex;
             justify-content: space-between;
@@ -117,6 +229,15 @@
             color: darken($color-grey-dark, 30);
             text-transform: uppercase;
             font-size: 1.5rem;
+
+            @include respond(tab-land) { 
+                font-weight: 250;
+                color: darken($color-grey-dark, 30);
+                text-transform: uppercase;
+                font-size: 1.1rem;
+    
+            } 
+
         }
 
         &--icon {
@@ -200,6 +321,14 @@
                 height: 2.5rem;
                 border-radius: 50%;
                 object-fit: cover;
+
+                @include respond(tab-land) { 
+                    width: 1.5rem;
+                    height: 1.5rem;
+                    border-radius: 50%;
+                    object-fit: cover; 
+        
+                }   
 
         }
         

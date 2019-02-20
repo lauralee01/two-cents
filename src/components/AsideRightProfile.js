@@ -1,7 +1,7 @@
 import React from 'react';
-import face2 from "../img/face2.jpeg";
-import face3 from "../img/face3.jpeg";
-import face6 from "../img/face6.jpeg";
+import pic2 from "../img/pic2.jpg";
+import pic3 from "../img/pic3.jpg";
+import pic6 from "../img/pic6.jpg";
 
 const AsideRightProfile = (props) => (
     <div>
@@ -9,7 +9,7 @@ const AsideRightProfile = (props) => (
     <div className="asideright-top__profile--info">
         <div className="asideright-top__profile--info__container">
             <img 
-                src={face2}
+                src={pic2}
                 alt="Avatar"
                 className="asideright-top__profile--info__image"
             />
@@ -29,7 +29,7 @@ const AsideRightProfile = (props) => (
     <div className="asideright-top__profile--info">
         <div className="asideright-top__profile--info__container">
             <img 
-                src={face3}
+                src={pic3}
                 alt="Avatar"
                 className="asideright-top__profile--info__image"
             />
@@ -49,7 +49,7 @@ const AsideRightProfile = (props) => (
     <div className="asideright-top__profile--info">
         <div className="asideright-top__profile--info__container">
             <img 
-                src={face6}
+                src={pic6}
                 alt="Avatar"
                 className="asideright-top__profile--info__image"
             />

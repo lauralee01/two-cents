@@ -2,16 +2,41 @@
     width: 60%;
     height: auto;
 
+    @include respond(phone) {
+        display: none;
+    }
+
+    @include respond(tab-port) {
+        display: none;
+    }
+
+    @include respond(tab-land) {
+        width: 100%;
+        height: auto;
+        
+    }
+
     &-top {
         box-shadow: $box-shadow;
         border-radius: .3rem;
         background-color: $color-white;
+
+        @include respond(tab-land) {
+            border-radius: .5rem;
+        }
 
         &__header {
             padding: 1.5rem 1.8rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
+
+            @include respond(tab-land) {
+                padding: 1.8rem 2rem;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
 
             &--heading {
                 font-size: 1.3rem;
@@ -28,48 +53,57 @@
                 }
             }
         }
-       &__profile {
-           padding: 1.5rem 1.8rem;
-           display: flex;
-           justify-content: space-between;
-           &:not(:last-child) {
-               margin-bottom: .1rem;
-           }
+        &__profile {
+            padding: 1.5rem 1.8rem;
+            display: flex;
+            justify-content: space-between;
 
-           & > span {
-               font-size: 1.4rem;
-               color: $color-grey-dark-2;
-           }
+                &:not(:last-child) {
+                    margin-bottom: .1rem;
+            }
 
-           &--info {
-               &__container {
+        & > span {
+            font-size: 1.4rem;
+            color: $color-grey-dark-2;
+        }
+
+        &--info {
+            &__container {
                     display: flex;
                     justify-content: center;
                     align-items: center;
-               }
+            }
 
-               &__image {
-                   width: 2rem;
-                   height: 2rem;
-                   border-radius: 50%;
-                   object-fit: cover;
-                   object-position: center;
-                   margin-right: 1rem;
-               }
+            &__image {
+                width: 2rem;
+                height: 2rem;
+                border-radius: 50%;
+                object-fit: cover;
+                object-position: center;
+                margin-right: 1rem;
 
-               &__handle {
-                   h1 {
-                       font-size: 1.1rem;
-                       color: $color-grey-dark;
-                   }
-                   p {
-                       font-size: .8rem;
-                       color: darken($color-grey-dark-2, 10);
-                   }
-               }
-              
-           }
-           .outline__btn {
+                    @include respond(tab-land) {
+                    width: 1.5rem;
+                    height: 1.5rem;
+                    border-radius: 50%;
+                    object-fit: cover;
+                    object-position: center;
+                    margin-right: 0.5rem;
+                }
+            }
+
+            &__handle {
+                h1 {
+                    font-size: 1.1rem;
+                    color: $color-grey-dark;
+                }
+                p {
+                    font-size: .8rem;
+                    color: darken($color-grey-dark-2, 10);
+                }
+            }
+        }
+        .outline__btn {
             padding: .4rem;
             border-radius: 2rem;
             color: $color-secondary;
@@ -77,8 +111,7 @@
             text-transform: uppercase;
             border-color: lighten($color-secondary, 30);
         } 
-       }
-       
+    }
     }
     &__middle {
         box-shadow: $box-shadow;
@@ -93,7 +126,7 @@
             margin-bottom: 2rem;
 
             span {
-               color: $color-tertiary; 
+                color: $color-tertiary; 
             }
         }
 

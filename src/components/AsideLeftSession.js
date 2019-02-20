@@ -1,6 +1,6 @@
 import React from 'react';
-import face2 from "../img/face2.jpeg";
-import face3 from "../img/face3.jpeg";
+import pic2 from "../img/pic2.jpg";
+import pic3 from "../img/pic3.jpg";
 
 const AsideLeftSession = (props) => (
     <div>
@@ -15,7 +15,7 @@ const AsideLeftSession = (props) => (
     <div className="asideleft__users">
         <div className="asideleft__users--details">
             <img
-                src={face2} 
+                src={pic2} 
                 alt="Pic 2"
                 className="asideleft__users--image"
             />
@@ -34,7 +34,7 @@ const AsideLeftSession = (props) => (
     <div className="asideleft__users">
     <div className="asideleft__users--details">
         <img
-            src={face3}
+            src={pic3}
             alt="Pic 3"
             className="asideleft__users--image"
         />
